@@ -1,4 +1,4 @@
-NAME = libft.a
+NAME = libs.a
 SRCS = s_strlen.c \
 	   s_strlcpy.c \
 	   s_isalpha.c \
@@ -8,7 +8,9 @@ SRCS = s_strlen.c \
 	   s_isascii.c \
 	   s_toupper.c \
 	   s_tolower.c \
-	   s_strlcat.c
+	   s_strlcat.c \
+	   s_memset.c
+
 OBJS = ${SRCS:.c=.o}
 CC = gcc
 FLAGS = -Wextra -Wall -Werror
