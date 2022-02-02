@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s_memset.c                                         :+:      :+:    :+:   */
+/*   s_bzero.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/02 17:14:30 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 19:23:15 by spena-mu         ###   ########.fr       */
+/*   Created: 2022/02/02 19:23:28 by spena-mu          #+#    #+#             */
+/*   Updated: 2022/02/02 19:37:55 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libs.h"
 
-void	*s_memset(void *b, int c, size_t len)
+void	s_bzero(void *s, size_t n)
 {
-	size_t	i1;
-
-	i1 = 0;
-	while (i1 < len)
-	{
-		((unsigned char *)b)[i1] = c;
-		i1++;
-	}
-	return (b);
+	s_memset(s, 0, n);
 }

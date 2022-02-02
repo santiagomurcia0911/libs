@@ -9,7 +9,8 @@ SRCS = s_strlen.c \
 	   s_toupper.c \
 	   s_tolower.c \
 	   s_strlcat.c \
-	   s_memset.c
+	   s_memset.c \
+	   s_bzero.c
 
 OBJS = ${SRCS:.c=.o}
 CC = gcc
