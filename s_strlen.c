@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:20:38 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 14:09:17 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/02 19:12:36 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 size_t	s_strlen(const char *s)
 {
-	size_t	counter;
+	size_t	i1;
 
-	counter = 0;
+	i1 = 0;
 	while (*s != '\0')
 	{
 		s++;
-		counter++;
+		i1++;
 	}
-	return (counter);
+	return (i1);
 }

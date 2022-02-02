@@ -6,20 +6,20 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 17:14:30 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 18:36:21 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/02 19:12:58 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libs.h"
 
 void	*s_memset(void *b, int c, size_t len)
 {
-	size_t	index;
+	size_t	i1;
 
-	index = 0;
-	while (index < len)
+	i1 = 0;
+	while (i1 < len)
 	{
-		((unsigned char *)b)[index] = c;
-		index++;
+		((unsigned char *)b)[i1] = c;
+		i1++;
 	}
 	return (b);
 }
