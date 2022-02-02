@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:50:13 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 19:26:26 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/02 19:57:08 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ int		s_toupper(int c);
 size_t	s_strlcat(char *dst, const char *src, size_t dstsize);
 void	*s_memset(void *b, int c, size_t len);
 void	s_bzero(void *s, size_t n);
+void	*s_memchr(const void *s, int c, size_t n);
 
 #endif

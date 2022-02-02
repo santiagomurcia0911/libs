@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 19:31:14 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/02 20:02:57 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,10 @@ int main()
 	char bzeros[] = "transporte";
 	s_bzero(bzeros, 4);
 	printf("s_bzero s=transporte n=4: %s\n\n", bzeros);
+
+	char memchrs[] = "arrastrar";
+	int memchrc = 't';
+	printf("s_memchr s=arrastrar, c=t, n=9: %s", s_memchr(memchrs, memchrc, 6));
 
 
 	return (0);
