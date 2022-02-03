@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 20:02:57 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/03 14:15:47 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int main()
 	size_t rescat;
 	printf("s_strlcat dst=come src=perro dstsize=2: %s\n", srccat); 
 	printf("s_strlcat dst=come src=perro dstsize=2: %s\n", dstcat); 
-	rescat = s_strlcat(dstcat, srccat, 9);
+	rescat = s_strlcat(dstcat, srccat, 6);
 	printf("s_strlcat concatenado esta en el nuevo dst=comeperr: %s y el tamano es %zu\n\n", dstcat, rescat);
 
 

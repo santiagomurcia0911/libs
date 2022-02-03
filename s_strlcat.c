@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 18:07:29 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/02 17:07:18 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/03 14:12:13 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,20 @@
 size_t	s_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i1;
-	size_t	i2;
+	size_t	sd;
+	size_t	ss;
 
-	i1 = s_strlen(dst);
-	i2 = 0;
-	if (dstsize <= i1)
-		return (dstsize + s_strlen(src));
-	while (src[i2] != '\0' && i1 < (dstsize - 1))
+	sd = s_strlen(dst);
+	ss = s_strlen(src);
+	i1 = 0;
+	if (dstsize <= sd)
+		return (dstsize + ss);
+	while (src[i1] != '\0' && sd < (dstsize - 1))
 	{
-		dst[i1] = src[i2];
-		i2++;
+		dst[sd] = src[i1];
 		i1++;
+		sd++;
 	}
-	dst[i1] = '\0';
-	return (s_strlen(dst) + s_strlen(&src[i2]));
+	dst[sd] = '\0';
+	return (sd + s_strlen(&src[i1]));
 }
