@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/04 15:47:12 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/04 16:13:47 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,12 @@ int main()
 
 	char memcpys[] = "inicial";
 	char memcpyd[] = "final";
-	printf("s_memcpy src=inicial dst=final n=5: %s", s_memcpy(memcpyd, memcpys, 5));
+	printf("s_memcpy src=inicial dst=final n=5: %s\n\n", s_memcpy(memcpyd, memcpys, 5));
+
+
+	char strchrs[] = "tractor";
+	int strchri = 'a';
+	printf("s_strchr src=tractor, int=a: %s", s_strchr(strchrs, strchri));
 
 
 	return (0);

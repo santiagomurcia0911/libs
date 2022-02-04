@@ -12,7 +12,8 @@ SRCS = s_strlen.c \
 	   s_memset.c \
 	   s_bzero.c \
 	   s_memchr.c \
-	   s_memcpy.c
+	   s_memcpy.c \
+	   s_strchr.c
 
 OBJS = ${SRCS:.c=.o}
 CC = gcc
