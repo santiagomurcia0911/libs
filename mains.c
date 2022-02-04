@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/04 16:13:47 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/04 17:10:04 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,14 @@ int main()
 	char strchrs[] = "tractor";
 	int strchri = 'a';
 	printf("s_strchr src=tractor, int=a: %s", s_strchr(strchrs, strchri));
+
+	int resultmemcmp = 0;
+    resultmemcmp = s_memcmp("abc","abc",2);
+    printf("test memcmp cuando las dos cadenas son iguales hasta n da cero:  %d\n",resultmemcmp);
+    resultmemcmp = s_memcmp("bca","abc",2);
+    printf("test memcmp cuando la primer cadena es mayor que la segunda hasta n da uno: %d\n",resultmemcmp);
+    resultmemcmp = s_memcmp("abc","bca",2);
+    printf("test memcmp cuando la primer cadena es menor que la segunda hasta n da menos uno: %d\n\n",resultmemcmp);
 
 
 	return (0);
