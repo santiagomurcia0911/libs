@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/05 17:01:55 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/05 19:00:08 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,12 @@ int main()
     printf("s_memcmp cuando la primer cadena es menor que la segunda hasta n da menos uno: %d\n\n",resultmemcmp);
 
 	char atois[] = " -56";
-	printf("s_atoi char= -56 %d", s_atoi(atois));
+	printf("s_atoi char= -56 %d\n\n", s_atoi(atois));
+
+	char	strncmps1[] = "igualdiferente";
+	char	strncmps2[] = "igualdiferente";
+	char	strncmps3[] = "diferente";
+	printf("s_strncmp s1=igualdiferente, s2=igualdiferente, s3=diferente, s1s2: %d, s1s3: %d, s2s3: %d", s_strncmp(strncmps1, strncmps2, 5), s_strncmp(strncmps1, strncmps3, 5), s_strncmp(strncmps2, strncmps3, 5));
 
 
 	return (0);
