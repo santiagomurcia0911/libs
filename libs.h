@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:50:13 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/04 17:09:43 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/05 16:58:02 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ void	*s_memchr(const void *s, int c, size_t n);
 void	*s_memcpy(void *dst, const void *src, size_t n);
 char	*s_strchr(const char *s, int c);
 int		s_memcmp(const void *s1, const void *s2, size_t n);
+int		s_atoi(const char *str);
 
 #endif
