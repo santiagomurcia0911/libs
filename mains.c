@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/08 15:39:33 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/08 16:28:31 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,11 @@ int main()
 	
 	char strnstrs1[] = "astronauta";
 	char strnstrs2[] = "trona";
-	printf("s_strnstr s1=astronauta, s2=trona, len=9: %s", s_strnstr(strnstrs1, strnstrs2, 9));	
+	printf("s_strnstr s1=astronauta, s2=trona, len=9: %s\n\n", s_strnstr(strnstrs1, strnstrs2, 9));
+
+	char strrchrs[] = "pamplona";
+	int strrchri = 'p';
+	printf("s_strrchr s=pamplona int=p: %s\n\n", s_strrchr(strrchrs, strrchri));	
 
 
 	return (0);
