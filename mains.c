@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/05 19:00:08 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/08 15:39:33 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ int main()
 
 	char strchrs[] = "tractor";
 	int strchri = 'a';
-	printf("s_strchr src=tractor, int=a: %s", s_strchr(strchrs, strchri));
+	printf("s_strchr src=tractor, int=a: %s\n\n", s_strchr(strchrs, strchri));
 
 	int resultmemcmp = 0;
     resultmemcmp = s_memcmp("abc","abc",2);
@@ -89,7 +89,12 @@ int main()
 	char	strncmps1[] = "igualdiferente";
 	char	strncmps2[] = "igualdiferente";
 	char	strncmps3[] = "diferente";
-	printf("s_strncmp s1=igualdiferente, s2=igualdiferente, s3=diferente, s1s2: %d, s1s3: %d, s2s3: %d", s_strncmp(strncmps1, strncmps2, 5), s_strncmp(strncmps1, strncmps3, 5), s_strncmp(strncmps2, strncmps3, 5));
+	printf("s_strncmp s1=igualdiferente, s2=igualdiferente, s3=diferente, s1s2: %d, s1s3: %d, s2s3: %d\n\n", s_strncmp(strncmps1, strncmps2, 5), s_strncmp(strncmps1, strncmps3, 5), s_strncmp(strncmps2, strncmps3, 5));
+
+	
+	char strnstrs1[] = "astronauta";
+	char strnstrs2[] = "trona";
+	printf("s_strnstr s1=astronauta, s2=trona, len=9: %s", s_strnstr(strnstrs1, strnstrs2, 9));	
 
 
 	return (0);

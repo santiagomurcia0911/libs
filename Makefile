@@ -16,8 +16,8 @@ SRCS = s_strlen.c \
 	   s_strchr.c \
 	   s_memcmp.c \
 	   s_atoi.c \
-	   s_strncmp.c
-
+	   s_strncmp.c \
+	   s_strnstr.c
 OBJS = ${SRCS:.c=.o}
 CC = gcc
 FLAGS = -Wextra -Wall -Werror
