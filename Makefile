@@ -19,7 +19,11 @@ SRCS = s_strlen.c \
 	   s_strncmp.c \
 	   s_strnstr.c \
 	   s_strrchr.c \
-	   s_memmove.c
+	   s_memmove.c \
+	   s_calloc.c \
+	   s_strdup.c \
+	   s_putchar_fd.c \
+	   s_putstr_fd.c 
 
 OBJS = ${SRCS:.c=.o}
 CC = gcc
