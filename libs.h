@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:50:13 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/09 16:54:40 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/09 17:26:06 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ void	*s_calloc(size_t count, size_t size);
 char	*s_strdup(const char *s1);
 void	s_putchar_fd(char c, int fd);
 void	s_putstr_fd(char *s, int fd);
+void	s_putendl_fd(char *s, int c);
 
 #endif
