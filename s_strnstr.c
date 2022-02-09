@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 14:30:36 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/08 15:39:15 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/08 16:44:28 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*s_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t i1;
-	size_t i2;
+	size_t	i1;
+	size_t	i2;
 
 	i1 = 0;
 	if (needle[0] == '\0')

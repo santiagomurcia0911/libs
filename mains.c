@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/08 16:28:31 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/09 15:49:22 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,26 @@ int main()
 {	
 	int	numero = '5';
 	int letra = 'a';
+	int letrama = 'A';
 
-	printf("isprint numero = 5:  %d\n", s_isprint(numero));
-	printf("isprint letra = a:  %d\n\n", s_isprint(letra));
-	printf("isalpha numero = 5:  %d\n", s_isalpha(numero));
-	printf("isalpha letra = a:  %d\n\n", s_isalpha(letra));
-	printf("isdigit numero = 5:  %d\n", s_isdigit(numero));
-	printf("isdigit letra = a:  %d\n\n", s_isdigit(letra));
-	printf("isascii numero = 5:  %d\n", s_isascii(numero));
-	printf("isascii letra = a:  %d\n\n", s_isascii(letra));
-	printf("isalnum numero = 5:  %d\n", s_isalnum(numero));
-	printf("isalnum letra = a:  %d\n\n", s_isalnum(letra));
+	printf("s_isprint numero = 5:  %d\n", s_isprint(numero));
+	printf("s_isprint letra = a:  %d\n\n", s_isprint(letra));
+
+	printf("s_isalpha numero = 5:  %d\n", s_isalpha(numero));
+	printf("s_isalpha letra = a:  %d\n\n", s_isalpha(letra));
+	
+	printf("s_isdigit numero = 5:  %d\n", s_isdigit(numero));
+	printf("s_isdigit letra = a:  %d\n\n", s_isdigit(letra));
+	
+	printf("s_isascii numero = 5:  %d\n", s_isascii(numero));
+	printf("s_isascii letra = a:  %d\n\n", s_isascii(letra));
+	
+	printf("s_isalnum numero = 5:  %d\n", s_isalnum(numero));
+	printf("s_isalnum letra = a:  %d\n\n", s_isalnum(letra));
+	
+	printf("s_toupper letra = a: %d\n\n", s_toupper(letra));
+	
+	printf("s_tolower letra = A: %d\n\n", s_tolower(letrama));
 
 
 
@@ -98,7 +107,11 @@ int main()
 
 	char strrchrs[] = "pamplona";
 	int strrchri = 'p';
-	printf("s_strrchr s=pamplona int=p: %s\n\n", s_strrchr(strrchrs, strrchri));	
+	printf("s_strrchr s=pamplona int=p: %s\n\n", s_strrchr(strrchrs, strrchri));
+
+	char memmoves[] = "casa";
+	char memmoved[] = "grande";
+	printf("s_memmove src=casa dst=grande len=2: %s\n\n", s_memmove(memmoved, memmoves, 2));
 
 
 	return (0);

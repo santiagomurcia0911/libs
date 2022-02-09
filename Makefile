@@ -18,7 +18,8 @@ SRCS = s_strlen.c \
 	   s_atoi.c \
 	   s_strncmp.c \
 	   s_strnstr.c \
-	   s_strrchr.c
+	   s_strrchr.c \
+	   s_memmove.c
 
 OBJS = ${SRCS:.c=.o}
 CC = gcc

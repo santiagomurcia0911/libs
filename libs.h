@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:50:13 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/08 16:25:32 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/09 15:36:05 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ int		s_atoi(const char *str);
 int		s_strncmp(const char *s1, const char *s2, size_t n);
 char	*s_strnstr(const char *haystack, const char *needle, size_t len);
 char	*s_strrchr(const char *s, int c);
+void	*s_memmove(void *dst, const void *src, size_t len);
 
 #endif

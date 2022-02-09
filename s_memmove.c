@@ -1,29 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s_strrchr.c                                        :+:      :+:    :+:   */
+/*   s_memmove.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/08 15:50:43 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/08 16:45:23 by spena-mu         ###   ########.fr       */
+/*   Created: 2022/02/09 13:01:39 by spena-mu          #+#    #+#             */
+/*   Updated: 2022/02/09 15:43:34 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libs.h"
 
-char	*s_strrchr(const char *s, int c)
+void	*s_memmove(void *dst, const void *src, size_t len)
 {
-	int	i1;
+	size_t	i1;
 
-	i1 = s_strlen(s);
-	while (i1 >= 0)
+	i1 = 0;
+	if (!dst && !src)
+		return (0);
+	if ((size_t)dst - (size_t)src < len)
 	{
-		if (c % 256 >= 1)
-			c -= (256 * (c / 256));
-		if (s[i1] == c)
-			return ((char *)&s[i1]);
-		i1--;
+		i1 = len - 1;
+		while (i1 < len)
+		{
+			((unsigned char *)dst)[i1] = ((unsigned char *)src)[i1];
+			i1--;
+		}
 	}
-	return (0);
+	else
+	{
+		while (i1 < len)
+		{
+			((unsigned char *)dst)[i1] = ((unsigned char *)src)[i1];
+			i1++;
+		}
+	}
+	return (dst);
 }
