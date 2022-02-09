@@ -24,7 +24,8 @@ SRCS = s_strlen.c \
 	   s_strdup.c \
 	   s_putchar_fd.c \
 	   s_putstr_fd.c \
-	   s_putendl_fd.c 
+	   s_putendl_fd.c \
+	   s_putnbr_fd.c 
 
 OBJS = ${SRCS:.c=.o}
 CC = gcc

@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/09 15:49:22 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:54:08 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,36 @@ int main()
 	char memmoved[] = "grande";
 	printf("s_memmove src=casa dst=grande len=2: %s\n\n", s_memmove(memmoved, memmoves, 2));
 
+
+	char *callocs;
+	callocs = s_calloc(4, sizeof(char));
+	printf("s_calloc: %s\n\n", callocs);
+
+	char strdups[] = "cuaderno";
+	printf("s_strdup: %s\n\n", s_strdup(strdups));
+
+	/*
+
+	char putchars = 'p';
+	int putcharc;
+	putcharc = s_putchar_fd(putchars, 1);
+	printf("s_putchar_fd char=p fd=1: %c\n\n", putcharc);
+
+	char putstr_fd_s[] = "roma";
+	int putstrc;
+	putstrc = s_putstr_fd(putstr_fd_s, 1);
+	printf("s_putsstr_fd str=roma fd=1: %c\n\n", putstrc);
+
+	char putendls [] = "bogota";
+	int putendlc;
+	putendlc = s_putendl_fd(putendls, 1);
+	printf("s_putendl_fd str=bogota fd=1: %c\n\n", putendlc);
+
+	int putnbrn[215555];
+	putnbrn = "2342";
+	printf("s_putnbr_fd de 2147483648: %s", s_putnbr_fd(putnbrn, 1));
+	
+	*/
 
 	return (0);
 }
