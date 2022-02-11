@@ -6,13 +6,14 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:35:55 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/09 18:54:08 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/11 18:20:11 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 #include "libs.h"
+#include <fcntl.h>
 
 int main()
 {	
@@ -121,28 +122,36 @@ int main()
 	char strdups[] = "cuaderno";
 	printf("s_strdup: %s\n\n", s_strdup(strdups));
 
-	/*
 
-	char putchars = 'p';
-	int putcharc;
-	putcharc = s_putchar_fd(putchars, 1);
-	printf("s_putchar_fd char=p fd=1: %c\n\n", putcharc);
+	int  fd;
+	fd = open("zapato.txt", O_RDWR);
+	s_putchar_fd('a', fd);
 
-	char putstr_fd_s[] = "roma";
+	/*char putstr_fd_s[] = "roma";
 	int putstrc;
-	putstrc = s_putstr_fd(putstr_fd_s, 1);
-	printf("s_putsstr_fd str=roma fd=1: %c\n\n", putstrc);
+	putstrc = s_putstr_fd(putstr_fd_s, 3);
+	printf("s_putsstr_fd str=roma fd=3: %c\n\n", putstrc);
 
 	char putendls [] = "bogota";
 	int putendlc;
-	putendlc = s_putendl_fd(putendls, 1);
-	printf("s_putendl_fd str=bogota fd=1: %c\n\n", putendlc);
+	putendlc = s_putendl_fd(putendls, 3);
+	printf("s_putendl_fd str=bogota fd=3: %c\n\n", putendlc);
 
 	int putnbrn[215555];
 	putnbrn = "2342";
-	printf("s_putnbr_fd de 2147483648: %s", s_putnbr_fd(putnbrn, 1));
+	printf("s_putnbr_fd de 2147483648: %s", s_putnbr_fd(putnbrn, 3));
 	
 	*/
+
+	char *li1;
+	t_list *mylist;
+	li1 = "patatas";
+	mylist = s_lstnew(li1);
+	while (mylist)
+	{
+		printf("s_lstnew con primer elemento patatas: %s\n\n", (char *) mylist->content);
+		mylist = mylist->next;
+	}
 
 	return (0);
 }

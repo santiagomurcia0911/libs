@@ -6,7 +6,7 @@
 /*   By: spena-mu <spena-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 14:50:13 by spena-mu          #+#    #+#             */
-/*   Updated: 2022/02/09 18:48:53 by spena-mu         ###   ########.fr       */
+/*   Updated: 2022/02/11 18:18:27 by spena-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
+typedef struct elemento
+{
+	void			*content;
+	struct elemento	*next;
+}t_list;
 
 size_t	s_strlen(const char *s);
 size_t	s_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -43,5 +49,6 @@ void	s_putchar_fd(char c, int fd);
 void	s_putstr_fd(char *s, int fd);
 void	s_putendl_fd(char *s, int c);
 void	s_putnbr_fd(int n, int fd);
+t_list	*s_lstnew(void *content);
 
 #endif

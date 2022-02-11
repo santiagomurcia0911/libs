@@ -25,9 +25,12 @@ SRCS = s_strlen.c \
 	   s_putchar_fd.c \
 	   s_putstr_fd.c \
 	   s_putendl_fd.c \
-	   s_putnbr_fd.c 
+	   s_putnbr_fd.c
+BONUS_S = s_lstnew.c
 
 OBJS = ${SRCS:.c=.o}
+
+BONUS_O = ${BONUS_S:.c=.o}
 CC = gcc
 FLAGS = -Wextra -Wall -Werror
 RM = rm -f
@@ -41,6 +44,9 @@ ${NAME} : ${OBJS}
 
 all : ${NAME}
 
+bonus : ${NAME} ${BONUS_O}
+	${LIBC} ${NAME} ${BONUS_O}
+
 program :
 	${CC} ${FLAGS} mains.c -ls -L. -o libs
 
@@ -51,4 +57,4 @@ fclean : clean
 	${RM} ${NAME}
 re : fclean all
 
-.PHONY: all clean fclean re .c.o
+.PHONY: all clean fclean re .c.o bonus
